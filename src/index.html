@@ -9,7 +9,24 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="theme">
-<header class="main-header"></header>
+<header class="main-header">
+  <div class="main-header__wrapper">
+    <button class="main-header__toggler">
+      <span class="main-header__toggler-text theme__visually-hidden">Открыть Меню</span>
+    </button>
+    <a class="main-header__logo" href="#">
+      <span class="main-header__logo-left">Mega</span>
+      <span class="main-header__logo-right">Tube</span>
+    </a>
+    <form action="#" class="main-header__search-form search-form" method="get">
+      <label for="search" class="search-form__label theme__visually-hidden">Поиск по сайту</label>
+      <input type="search" id="search" class="search-form__input" placeholder="Найти...">
+      <button class="search-form__submit-btn" type="submit">
+        <span class="theme__visually-hidden">Найти</span>
+      </button>
+    </form>
+  </div>
+</header>
 <main class="main-content"></main>
 <footer class="main-footer"></footer>
 </body>
