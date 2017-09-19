@@ -1,0 +1,137 @@
+.video__wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.video__inner {
+  width: 100%;
+  display: block;
+}
+
+.video__progress-bar-container {
+  height: 10px;
+  width: 100%;
+  background-color: #272727;
+  position: relative;
+}
+
+.video__progress-bar-loaded {
+  width: 95%;
+  height: 10px;
+  background-color: #464646;
+  position: absolute;
+  z-index: 1;
+}
+
+.video__progress-bar-viewed {
+  width: 35%;
+  height: 10px;
+  background-color: $blue-color;
+  position: absolute;
+  z-index: 2;
+}
+
+.video__progress-bar-pin {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  z-index: 3;
+  left: 35%;
+  top: -3px;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+.video__progress-bar-pin::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  background-color: $gray-color;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.video__button-controls {
+  background-color: black;
+  height: 30px;
+  padding: 0 10px;
+  color: #8c8c8c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.video__button-controls-left {
+  display: flex;
+  align-items: center;
+}
+
+.video__button-left {
+  border: none;
+  background-color: transparent;
+  width: 16px;
+  height: 16px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.video__button-play {
+  background-image: url("../img/player-btns-spr.png");
+  background-position: center -1px;
+}
+
+.video__button-rewind {
+  background-image: url("../img/player-btns-spr.png");
+  background-position: center -30px;
+
+}
+
+.video__button-volume {
+  background-image: url("../img/player-btns-spr.png");
+  background-position: center -59px;
+}
+
+.video__time-current {
+  color: white;
+}
+
+.video__button-controls-right {
+  display: flex;
+  align-items: center;
+}
+
+.video__button-right {
+  border: none;
+  background-color: transparent;
+  width: 25px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  padding: 0;
+  text-align: right;
+
+}
+
+.video__button-widescreen {
+  background-image: url("../img/player-btns-spr.png");
+  background-position: center 77px;
+}
+
+.video__button-fullscree {
+  background-image: url("../img/player-btns-spr.png");
+  background-position: center 48px;
+}
+
+.video__button-quality {
+  background-image: url("../img/player-btns-spr.png");
+  background-position: center 19px;
+  margin-right: 0;
+}

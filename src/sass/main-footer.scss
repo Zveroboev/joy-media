@@ -1,0 +1,27 @@
+.main-footer {
+  background-color: $gray-color;
+  color: $footer-text;
+  padding-bottom: 10px;
+}
+
+.main-footer__wrapper {
+  min-height: 50px;
+  min-width: 300px;
+  max-width: 720px;
+  padding: 0 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-footer__text {
+  text-align: justify;
+}
+
+.main-footer__link {
+ color: inherit;
+}
+
+.main-footer__back {
+  color: inherit;
+}
+
