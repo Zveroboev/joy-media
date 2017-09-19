@@ -1,0 +1,77 @@
+.video-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.video-info__left {
+  color: #767676;
+  font-size: 11px;
+  margin-right: 20px;
+}
+
+.video-info__name {
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+
+.video-info__button {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  margin-right: 5px;
+  background-image: url("../img/video-info-spr.png");
+  padding: 0;
+}
+
+.video-info__right {
+  color: #a4a7ac;
+  font-size: 12px;
+  vertical-align: top;
+}
+
+.video-info__right-top {
+  margin-bottom: 5px;
+}
+
+.video-info__right-top span {
+  position: relative;
+  bottom: 5px;
+}
+
+.video-info__likes-count-text {
+  margin-right: 5px;
+}
+
+.video-info__likes-count-text--hidden {
+  display: none;
+}
+
+.video-info__button-dislike {
+  background-position: center 100px;
+}
+
+.video-info__right-bottom {
+  text-align: end;
+}
+
+.video-info__button--bottom {
+  width: 16px;
+  height: 14px;
+  margin-right: 0;
+}
+
+.video-info__button-dop {
+  background-position: -2px 67px;
+}
+
+.video-info__button-share {
+  background-position: center 41px;
+}
+
+.video-info__button-flag {
+  background-position: -7px 15px;
+}
+

@@ -1,0 +1,76 @@
+.video-controls {
+  background-color: black;
+  height: 30px;
+  padding: 0 10px;
+  color: #8c8c8c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.video-controls__button-controls-left {
+  display: flex;
+  align-items: center;
+}
+
+.video-controls__button-left {
+  border: none;
+  background-color: transparent;
+  width: 16px;
+  height: 16px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.video-controls__button-play {
+  background-image: url("../img/player-btns-spr.png");
+  background-position: center -1px;
+}
+
+.video-controls__button-rewind {
+  background-image: url("../img/player-btns-spr.png");
+  background-position: center -30px;
+
+}
+
+.video-controls__button-volume {
+  background-image: url("../img/player-btns-spr.png");
+  background-position: center -59px;
+}
+
+.video-controls__time-current {
+  color: white;
+}
+
+.video-controls__button-controls-right {
+  display: flex;
+  align-items: center;
+}
+
+.video-controls__button-right {
+  border: none;
+  background-color: transparent;
+  width: 25px;
+  height: 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  padding: 0;
+  text-align: right;
+
+}
+
+.video-controls__button-widescreen {
+  background-image: url("../img/player-btns-spr.png");
+  background-position: center 77px;
+}
+
+.video-controls__button-fullscree {
+  background-image: url("../img/player-btns-spr.png");
+  background-position: center 48px;
+}
+
+.video-controls__button-quality {
+  background-image: url("../img/player-btns-spr.png");
+  background-position: center 19px;
+  margin-right: 0;
+}
