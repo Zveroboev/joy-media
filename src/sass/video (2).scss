@@ -7,7 +7,7 @@
   display: block;
 }
 
-.video__loading {
+.video__loaded {
   position: absolute;
   z-index: 1;
   top: 0;
@@ -20,18 +20,10 @@
   justify-content: center;
 }
 
-.video__loading--load {
-  display: none;
-}
+.video__loaded svg {
 
-.video__spinner {
-  transform-origin: 50% 54.5%;
-  animation: spinner 3s 1 normal ease-in-out;
-  background-image: url("../img/spinner.svg");
-  background-size: contain;
-  background-position: 50% 50%;
-  width: 150px;
-  height: 150px;
+  transform-origin: 50% 50% 0;
+  animation: spinner 3s infinite alternate ease-in-out;
 }
 
 .video__progress-bar-container {

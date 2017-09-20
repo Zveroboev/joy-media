@@ -552,6 +552,8 @@ input[type="radio"].visually-hidden {
   margin-bottom: 10px; }
 
 .main-content__related-video {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   min-width: 300px;
   max-width: 720px;
   margin: 0 auto;
@@ -586,20 +588,12 @@ input[type="radio"].visually-hidden {
       -ms-flex-pack: center;
           justify-content: center; }
 
-.video__loading--load {
-  display: none; }
-
-.video__spinner {
-  -webkit-transform-origin: 50% 54.5%;
-      -ms-transform-origin: 50% 54.5%;
-          transform-origin: 50% 54.5%;
-  -webkit-animation: spinner 3s 1 normal ease-in-out;
-          animation: spinner 3s 1 normal ease-in-out;
-  background-image: url("../img/spinner.svg");
-  background-size: contain;
-  background-position: 50% 50%;
-  width: 150px;
-  height: 150px; }
+.video__loading svg {
+  -webkit-transform-origin: 50% 50% 0;
+      -ms-transform-origin: 50% 50% 0;
+          transform-origin: 50% 50% 0;
+  -webkit-animation: spinner 3s infinite alternate ease-in-out;
+          animation: spinner 3s infinite alternate ease-in-out; }
 
 .video__progress-bar-container {
   height: 10px;
