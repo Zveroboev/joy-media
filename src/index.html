@@ -18,28 +18,31 @@
       <span class="main-header__logo-left">Mega</span>
       <span class="main-header__logo-right">Tube</span>
     </a>
-    <form action="#" class="main-header__search-form search-form" method="get">
+    <form action="#" class="main-header__search-form search-form">
       <label for="search" class="search-form__label theme__visually-hidden">Поиск по сайту</label>
       <input type="search" id="search" class="search-form__input" placeholder="Найти...">
-      <button class="search-form__submit-btn" type="submit">
+      <button class="search-form__submit-btn">
         <span class="theme__visually-hidden">Найти</span>
       </button>
     </form>
   </div>
 </header>
 <main class="main-content">
-
   <section class="main-content__video video">
     <div class="video__wrapper">
       <video src="#" class="video__inner" poster="img/video-poster.jpg"></video>
       <div class="video__loading">
         <div class="video__spinner"></div>
+        <div class="video__service">
+          <a href="#" class="video__service-link">Смотреть</a>
+          <p class="video__service-info">Услуга предоставляется только лицам, достигшим совершеннолетия. Услуга платная.</p>
+        </div>
       </div>
     </div>
     <div class="video__progress-bar-container">
       <div class="video__progress-bar-loaded"></div>
       <div class="video__progress-bar-viewed"></div>
-      <div class="video__progress-bar-pin"></div>
+      <div class="video__progress-bar-pin video__progress-bar-pin--hidden"></div>
     </div>
     <div class="video__button-controls video-controls">
       <div class="video-controls__button-controls-left">
@@ -59,7 +62,6 @@
       </div>
     </div>
   </section>
-
   <section class="main-content__video-info video-info">
     <div class="video-info__left">
       <div class="video-info__name">Borat_greets.mp4</div>
@@ -80,10 +82,8 @@
         <button class="video-info__button video-info__button--bottom video-info__button-share"></button>
         <button class="video-info__button video-info__button--bottom video-info__button-flag"></button>
       </div>
-
     </div>
   </section>
-
   <section class="main-content__related-video related-video">
     <ul class="related-video__list">
       <li class="related-video__item">
@@ -104,7 +104,6 @@
       </li>
     </ul>
   </section>
-
 </main>
 <footer class="main-footer">
   <div class="main-footer__wrapper">
@@ -119,5 +118,7 @@
     <a href="#" class="main-footer__back">Вернуться</a>
   </div>
 </footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>

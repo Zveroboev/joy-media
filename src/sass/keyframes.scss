@@ -3,3 +3,22 @@
     transform: rotate(3600deg);
   }
 }
+
+@keyframes loaded-bar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes viewed-bar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 35%;
+  }
+}
+
