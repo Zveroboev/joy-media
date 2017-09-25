@@ -438,6 +438,28 @@ template {
   100% {
     border-color: #559100; } }
 
+@-webkit-keyframes popup-animation {
+  0%, 50%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  10%, 30% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px); }
+  20%, 40% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px); } }
+
+@keyframes popup-animation {
+  0%, 50%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  10%, 30% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px); }
+  20%, 40% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px); } }
+
 .theme {
   font-size: 12px;
   line-height: 1.2;
@@ -487,11 +509,16 @@ input[type="radio"].visually-hidden {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+.popup--hidden {
+  display: none; }
+
 .popup__content {
   width: 95%;
+  max-width: 400px;
   height: 31%;
+  max-height: 250px;
   background-color: #cccccc;
-  margin-top: 30%;
+  margin-top: 100px;
   border-radius: 10px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -511,7 +538,54 @@ input[type="radio"].visually-hidden {
           justify-content: space-around;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 10px; }
+  padding: 10px;
+  position: relative; }
+
+.popup__content--animation {
+  -webkit-animation: popup-animation 0.5s ease-in-out 0s normal none 1 running;
+          animation: popup-animation 0.5s ease-in-out 0s normal none 1 running; }
+
+.popup__close {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  width: 14px;
+  height: 14px;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.popup__close::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: 6px;
+  width: 2px;
+  height: 16px;
+  background-color: #5b5b5b;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg); }
+
+.popup__close::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: 6px;
+  width: 2px;
+  height: 16px;
+  background-color: #5b5b5b;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+
+.popup__close:hover,
+.popup__close:focus {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
 
 .popup__service {
   position: relative; }
@@ -525,7 +599,8 @@ input[type="radio"].visually-hidden {
   font-size: 11px;
   line-height: 16px;
   color: #333333;
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
 
 .popup__label::before {
   content: "";
@@ -544,25 +619,41 @@ input[type="radio"].visually-hidden {
   -webkit-animation: none;
           animation: none; }
 
+.popup__input:checked + .popup__label::after {
+  content: url("../img/check.png");
+  position: absolute;
+  left: 8px;
+  top: 9px;
+  width: 14px;
+  height: 15px; }
+
 .popup__label-link {
   color: inherit;
   cursor: pointer; }
 
 .popup__link {
   display: block;
-  background-color: #559100;
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 24px;
   padding: 25px 15px;
   border-radius: 5px;
-  pointer-events: auto; }
-
-.popup__link--disabled {
   background-color: #90ae66;
   pointer-events: none;
   cursor: not-allowed; }
+
+.popup__input:checked ~ .popup__link {
+  background-color: #559100;
+  pointer-events: auto;
+  cursor: pointer; }
+
+.popup__input:checked ~ .popup__link:hover,
+.popup__input:checked ~ .popup__link:focus {
+  background-color: #4a7f00; }
+
+.popup__input:checked ~ .popup__link:active {
+  background-color: #3f6c00; }
 
 .main-header {
   background-color: #cacaca;
@@ -736,6 +827,7 @@ input[type="radio"].visually-hidden {
           box-sizing: border-box;
   display: none;
   width: 80%;
+  max-width: 400px;
   min-height: 40%;
   background-color: #499ccc;
   border: 2px solid white;

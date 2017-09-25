@@ -30,3 +30,15 @@
     border-color: $green-color-active;
   }
 }
+
+@keyframes popup-animation {
+  0%, 50%, 100% {
+    transform: rotate(0deg);
+  }
+  10%, 30% {
+    transform: translateX(-10px);
+  }
+  20%, 40% {
+    transform: translateX(10px);
+  }
+}

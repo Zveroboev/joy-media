@@ -35,7 +35,8 @@
         <div class="video__spinner"></div>
         <div class="video__service">
           <a href="#" class="video__service-link">Смотреть</a>
-          <p class="video__service-info">Услуга предоставляется только лицам, достигшим совершеннолетия. Услуга платная.</p>
+          <p class="video__service-info">Услуга предоставляется только лицам, достигшим совершеннолетия. Услуга
+            платная.</p>
         </div>
       </div>
     </div>
@@ -119,13 +120,14 @@
   </div>
 </footer>
 <section class="popup popup--hidden">
-  <div class="popup__content ">
-    <div class="popup__service">
-      <input type="checkbox" class="popup__input" id="service">
-      <label for="service" class="popup__label">
-        Подветрдите, что вы согласны с <a href="#" class="popup__label-link">условиями предоставления сервиса</a>
-      </label>
-    </div>
+  <div class="popup__content">
+    <button type="button" class="popup__close">
+      <span class="popup__close-text theme__visually-hidden">Закрыть</span>
+    </button>
+    <input type="checkbox" class="popup__input" id="service">
+    <label for="service" class="popup__label">
+      Подветрдите, что вы согласны с <a href="#" class="popup__label-link">условиями предоставления сервиса</a>
+    </label>
     <a href="https://ya.ru/" class="popup__link popup__link--disabled">Продолжить</a>
   </div>
 </section>
