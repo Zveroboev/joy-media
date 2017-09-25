@@ -22,3 +22,11 @@
   }
 }
 
+@keyframes checkbox-color {
+  0% {
+    border-color: $green-color-disabled;
+  }
+  100% {
+    border-color: $green-color-active;
+  }
+}

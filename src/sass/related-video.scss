@@ -13,6 +13,10 @@
   align-content: stretch;
 }
 
+.related-video__item {
+  width: 40%;
+}
+
 .related-video__preview {
   width: 100%;
   height: auto;
@@ -24,7 +28,7 @@
 
 .related-video__link-wrapper {
   width: 100%;
-  height: 74px;
+  height: 100%;
   background-color: rgba(white, 0.2);
   position: absolute;
   z-index: 1;

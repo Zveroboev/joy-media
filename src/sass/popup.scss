@@ -1,0 +1,89 @@
+.popup {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(black, 0.5);
+  position: fixed;
+  z-index: 9999999;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.popup--hidden {
+  //display: none;
+}
+
+.popup__content {
+  width: 95%;
+  height: 31%;
+  background-color: #cccccc;
+  margin-top: 30%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.popup__service {
+  position: relative;
+}
+
+.popup__input {
+  display: none;
+}
+
+.popup__label {
+  padding-left: 40px;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 16px;
+  color: #333333;
+  position: relative;
+}
+
+.popup__label::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  background-color: white;
+  left: 0;
+  top: 0;
+  border: 3px solid $green-color-disabled;
+  animation: checkbox-color 1s ease-in-out 0s infinite alternate;
+}
+
+.popup__input:checked + .popup__label::before {
+  border-color: $green-color-active;
+  animation: none;
+}
+
+.popup__input:checked + .popup__label::after {
+  
+}
+
+.popup__label-link {
+  color: inherit;
+  cursor: pointer;
+}
+
+.popup__link {
+  display: block;
+  background-color: $green-color-active;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 24px;
+  padding: 25px 15px;
+  border-radius: 5px;
+  pointer-events: auto;
+}
+
+.popup__link--disabled {
+  background-color: $green-color-disabled;
+  pointer-events: none;
+  cursor: not-allowed
+}
