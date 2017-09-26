@@ -54,6 +54,10 @@
   justify-content: center;
 }
 
+.video__service--disabled {
+  pointer-events: none;
+}
+
 .video__service-link {
   color: inherit;
   text-decoration: none;

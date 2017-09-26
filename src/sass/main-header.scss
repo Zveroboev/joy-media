@@ -33,6 +33,38 @@
   background-color: black;
   box-shadow: 0 5px 0 0 black,
               0 -5px 0 0 black;
+
+}
+
+.main-header__toggler--open {
+  width: 16px;
+  height: 15px;
+  position: relative;
+
+}
+
+.main-header__toggler--open::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 3px;
+  box-shadow: none;
+  background-color: black;
+  transform: rotate(20deg);
+  top: 9px;
+}
+
+.main-header__toggler--open::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 15px;
+  height: 3px;
+  box-shadow: none;
+  background-color: black;
+  transform: rotate(-20deg);
+  top: 4px;
 }
 
 .main-header__logo {

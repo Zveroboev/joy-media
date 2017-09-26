@@ -1,6 +1,10 @@
 .related-video {
   background-color: #eeeeee;
   border: 1px solid #dbdbdb;
+
+  @media (max-width: 321px) {
+    display: none;
+  }
 }
 
 .related-video__list {
